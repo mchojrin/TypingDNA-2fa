@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Verify OTP{% endblock %}
+
+{% block body %}
+    <button
+            class="typingDNA-verify"
+            data-typingdna-client-id="{{ typingdna.clientId }}"
+            data-typingdna-application-id="{{ typingdna.applicationId }}"
+            data-typingdna-payload="{{ typingdna.payload }}"
+            data-typingdna-callback-fn= "callbackFn"
+            >Verify with Typingdna
+    </button>
+{% endblock %}
+{% block bottom_javascripts %}
+    <script src="https://cdn.typingdna.com/verify/typingdna-verify.js"></script>
+    <script>
+        function callbackFn(payload)
+        {
+            window.location.href = "{{ url('app_verify_otp') }}?otp=".concat(payload['otp']);
+        }
+    </script>
+{% endblock %}

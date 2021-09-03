@@ -23,3 +23,10 @@ services:
 
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones
+
+    App\TwoFactorAuthentication\TypingDNAWrapper:
+        class: App\TwoFactorAuthentication\TypingDNAWrapper
+        arguments:
+            $clientID: '%env(TYPING_DNA_CLIENT_ID)%'
+            $applicationID: '%env(TYPING_DNA_APP_ID)%'
+            $secret: '%env(TYPING_DNA_CLIENT_SECRET)%'
