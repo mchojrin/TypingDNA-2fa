@@ -53,3 +53,7 @@ TYPING_DNA_CLIENT_SECRET=YOUR_CLIENT_SECRET
 5. Complete verification process. You should end up on a screen similar to:
 
 ![User Dashboard](./User_dashboard.png)
+
+That's it!
+
+Now, if you try logging out and entering directly to /dashboard you'll be redirected back to the login screen.
