@@ -35,7 +35,10 @@ TYPING_DNA_CLIENT_SECRET=YOUR_CLIENT_SECRET
 ## Running
 
 1. Start the services: `docker-compose up -d`
-2. Start a ngrok tunnel to localhost: `ngrok http 8080`
+2. Start a ngrok tunnel to localhost: `ngrok http 8080`. You should see a screen like:
+
+![Ngrok tunnel information](./ngrok_tunnel.png)
+
 3. Update the integration information on your TypingDNA Verify's dashboard
 4. Open a browser at the https endpoint created by ngrok /login. You should see this screen:
 
