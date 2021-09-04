@@ -6,7 +6,7 @@ This repository is the code accompanying [this article](). It is designed as a P
 
 In order to install and run this application you'll need:
 
-* [Docker]([Docker](https://www.docker.com/) and Docker Compose
+* [Docker](https://www.docker.com/) and Docker Compose
 * An account at [TypingDNA](https://www.typingdna.com/)
 * An account at [Ngrok](https://ngrok.com/)
 * The ngrok client installed
